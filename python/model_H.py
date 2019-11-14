@@ -99,7 +99,7 @@ if domain.dist.comm.rank == 0:
 
 # Analysis
 analysis_tasks = []
-snap = solver.evaluator.add_file_handler(os.path.join(data_dir,'snapshots'), iter=1, max_writes=200)
+snap = solver.evaluator.add_file_handler(os.path.join(data_dir,'snapshots'), iter=100, max_writes=200)
 snap.add_task("phi")
 snap.add_task("vx")
 snap.add_task("vy")
