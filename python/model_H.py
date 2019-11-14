@@ -81,7 +81,7 @@ problem.add_equation("dx(vx) + dy(vy) = 0", condition="(nx != 0) or (ny != 0)")
 problem.add_equation("p = 0", condition="(nx == 0) and (ny == 0)")
 
 problem.add_equation("dt(vx) + dx(p) - ν*Lap(vx) = -vx*dx(vx) - vy*dy(vx) - kappa_hat*(2*dx(phi)*dx(dx(phi)) + dx(dy(phi))*dy(phi) +   dx(phi)*dy(dy(phi)) - dx(Lap(phi)**2)/2.)")
-problem.add_equation("dt(vy) + dy(p) - ν*Lap(vx) = -vx*dx(vy) - vy*dy(vy) - kappa_hat*(  dx(dy(phi))*dx(phi) + dy(phi)*dx(dx(phi)) + 2*dy(phi)*dy(dy(phi)) - dy(Lap(phi)**2)/2.)")
+problem.add_equation("dt(vy) + dy(p) - ν*Lap(vy) = -vx*dx(vy) - vy*dy(vy) - kappa_hat*(  dx(dy(phi))*dx(phi) + dy(phi)*dx(dx(phi)) + 2*dy(phi)*dy(dy(phi)) - dy(Lap(phi)**2)/2.)")
 
 
 # Phase field
